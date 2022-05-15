@@ -1,27 +1,4 @@
 
-:root {
-    /* change the values below to your colors from your palette */
-    --primary-color: ##CEB490   ;
-    --secondary-color: #5A5C32 ;
-    --accent1-color: #9EB2D5;
-    --accent2-color: #CEB490;
-  
-    /* change the values below to your chosen font(s) */
-    --heading-font: "Kaushan Script";
-    --paragraph-font: Roboto, Helvetica, sans-serif;
-  
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #CEB490;  /* headlines on a white background */ 
-    --headline-color-on-color: #CEB490; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #CEB490; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-    --paragraph-background-color: ##CEB490  ;
-    --nav-link-color: #CEB490;
-    --nav-background-color: #CEB490;
-    --nav-hover-link-color: white;
-    --nav-hover-background-color: #CEB490;
-  }
-  
 
 #content {
     max-width: 1600px;
