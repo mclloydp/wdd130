@@ -1,0 +1,123 @@
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: ##CEB490   ;
+    --secondary-color: #5A5C32 ;
+    --accent1-color: #9EB2D5;
+    --accent2-color: #CEB490;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Kaushan Script";
+    --paragraph-font: Roboto, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #CEB490;  /* headlines on a white background */ 
+    --headline-color-on-color: #CEB490; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #CEB490; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: ##CEB490  ;
+    --nav-link-color: #CEB490;
+    --nav-background-color: #CEB490;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #CEB490;
+  }
+  
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+}
+
+body { 
+    background-color:#CEB490;
+}
+
+header{
+    background-color: #CEB490;
+}
+
+nav a:hover {
+    background-color: #CEB490;
+    color: black;
+}
+
+.home-title  {
+    color: black;
+}
+
+h4 {
+    color: black;
+}
+
+.book, .join{
+    background-color:#CEB490;
+    color: black;
+    text-decoration: none;
+}
+
+.book:hover, .join:hover {
+    background-color:#CEB490;
+    color: black;
+} 
+
+.msg {
+    background-color:#CEB490;
+}
+.msg h2 {
+    color: black;
+}
+
+.msg p {
+    color: black;
+}
+
+footer {
+    background-color:#CEB490;
+}
+
+footer h3 {
+    color: black;
+    text-decoration: underline;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: black;
+}
