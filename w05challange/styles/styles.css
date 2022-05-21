@@ -1,0 +1,31 @@
+body {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0; 
+}
+#sect1 {
+    background-color: gray;
+}
+#sect1 img {
+    width: 100%;
+    margin: 0;
+
+}
+#sect2 {
+   /* max-width: 1280px;*/
+    background-color: gray;
+    margin: 0;
+  
+}
+
+#sect2 img {
+
+    width: 25%;
+    margin: 50px;
+    border: 30px solid rgb(70, 66, 66);
+    border-radius: 50%; 
+    
+  
+}
