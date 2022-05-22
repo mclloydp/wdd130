@@ -1,13 +1,18 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto&display=swap');
 
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 nav a {
     text-align: center;
     text-decoration: none;
+    padding: 35px;
 }
 
 .logo {
@@ -16,10 +21,12 @@ nav a {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
+    font-family: "Kaushan Script";
 }
 
 #hero-img {
@@ -40,6 +47,9 @@ main section {
 
 body { 
     background-color:#CEB490;
+    font-family:Roboto, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -53,16 +63,28 @@ nav a:hover {
 
 .home-title  {
     color: black;
+    font-family: "Kaushan Script";
+    font-size: 3em;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Kaushan Script";
+    font-size: 2em;
+}
+    
 h4 {
     color: black;
+}
+
+h2 {
+    margin: 0;
 }
 
 .book, .join{
     background-color:#CEB490;
     color: black;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
 }
 
 .book:hover, .join:hover {
@@ -72,6 +94,9 @@ h4 {
 
 .msg {
     background-color:#CEB490;
+    line-height: 1.5em;
+    padding: 35px;
+
 }
 .msg h2 {
     color: black;
@@ -79,10 +104,13 @@ h4 {
 
 .msg p {
     color: black;
+   font-size:.8em ; 
+   padding-bottom: 15px;
 }
 
 footer {
     background-color:#9EB2D5;
+    padding: 25px 50px;
 }
 
 footer h3 {
@@ -97,4 +125,8 @@ footer a {
 
 footer a:hover {
     color: black;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
