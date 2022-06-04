@@ -78,7 +78,7 @@ nav a {
 .rapids-card {
     grid-column: 8/10;
     grid-row: 2/3;
-}
+} 
 
 #background {
     grid-column: 1/11;
@@ -167,7 +167,7 @@ h2 {
     color: black;
 } 
 
-.rivers-card, .camping-card, .rapids-cards{
+.rivers-card, .camping-card, .rapids-card{
     margin: 200px 0;
 }
 
