@@ -59,6 +59,7 @@ nav a {
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr) ;
+    
 }
 
 .rivers-grid {
@@ -69,11 +70,63 @@ nav a {
 
 #sec1 {
     grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 50px;
+}
+
+#title1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    z-index: 1;
+    margin-top: 100px;
+    color: black;
 }
 
 #para1 {
     grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 50px;
 }
+
+#para2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#sec2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    z-index: -1;
+}
+
+#title2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+#sec3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    z-index: -1;
+}
+
+#title3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+#para3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
 .card-img, .mountains {
     width: 100%;
 }
