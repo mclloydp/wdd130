@@ -61,6 +61,19 @@ nav a {
     grid-template-columns: repeat(10, 1fr) ;
 }
 
+.rivers-grid {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-gap: 20px;
+}
+
+#sec1 {
+    grid-column: 1/2;
+}
+
+#para1 {
+    grid-column: 2/3;
+}
 .card-img, .mountains {
     width: 100%;
 }
