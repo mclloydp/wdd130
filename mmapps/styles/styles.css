@@ -15,6 +15,22 @@ nav a {
     padding: 35px;
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav a:hover {
+    background-color: #9EB2D5;
+    color: black;
+}
+
 .logo {
     width: 80px;
 }
@@ -36,10 +52,21 @@ nav a {
     z-index: -1;
 }
 
+/* #hero1-box {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+} */
+
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
+    z-index: 1;
+    color: white;
+    font-size: 1.5em;
+    background-color: rgba(126, 109, 109, 0.671);
+    padding: 25px;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -50,6 +77,13 @@ nav a {
 
 #hero-img {
     width: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: space-around;
+}
+
+#hero1-img {
+    width: 70%;
 }
 
 .button-box {
@@ -60,6 +94,11 @@ nav a {
     display: grid;
     grid-template-columns: repeat(10, 1fr) ;
     
+}
+
+#inset-img {
+    width: 300px;
+
 }
 
 .rivers-grid {
@@ -181,21 +220,6 @@ header{
 
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-#logo_link {
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
-}
-
-nav a:hover {
-    background-color: #9EB2D5;
-    color: black;
-}
 
 
 .home-title  {
