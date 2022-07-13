@@ -28,34 +28,48 @@
                 <img id="hero-img" src="images/website_3.jpg" alt="my process img">
             </div>
             <section id="hero-msg">
+                <h1>Moble Application Development. My Process.</h1>
                 <P>
-                    Moble Application Development. My Process.
-                </P>   
+                    On our website, you can start developing your own website/app by answering a series of questions
+                    that will assist you in creating your own website/app. These questions will help you as you go
+                    through the process we provide. Where do I start? I will guide you in the process of finding out
+                    your ideas. How big will my website/app be? Which colors am I going to use on my website/app?
+                    What functionality do I require? What are my target markets? What pictures do I need on my
+                    website/app? Logo design? What software platform do I need? What information is required
+                    beforehand? Who will use the website/app? 
+                       
+                </P> 
+                <p>I will intervene as soon as a considerable amount of
+                    work has been done and you have answered many of these questions. From this point on I will
+                    introduce paid content. The paid content is very reasonable to accommodate you, the startup,
+                    individual or small to medium business. In doing so I anticipate that you as my new client will
+                    stay with me for the rest of the journey. As you grow, so will I grow with you. I believe that
+                    if we must succeed, we must do so together. We must not leave anyone behind. As our societies
+                    grow so must everyone else. By focusing on you, startups, individuals and small to medium
+                    businesses, we will have a greater impact on society and the world at large.</p>  
+                    <!-- Trigger the Modal -->
+<img
+id="myImg"
+src="images/website_1.jpg"
+alt="Code"
+style="width: 100%; max-width: 300px"
+/>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+<!-- The Close Button -->
+<span class="close">&times;</span>
+
+<!-- Modal Content (The Image) -->
+<img class="modal-content" id="img01" />
+
+<!-- Modal Caption (Image Text) -->
+<div id="caption"></div>
             </section>
 
         </div>
         <main class="home-grid">
-            <section id="home-img">
-                <img id="inset-img" src="images/website_1.jpg" alt="my process inset img">
-            </section>
-                <section id="home-msg">
-                    <h1 class="home-title"> McLloyd Mobile Applications</h1>
-                    <p>On our website, you can start developing your own website/app by answering a series of questions
-                        that will assist you in creating your own website/app. These questions will help you as you go
-                        through the process we provide. Where do I start? I will guide you in the process of finding out
-                        your ideas. How big will my website/app be? Which colors am I going to use on my website/app?
-                        What functionality do I require? What are my target markets? What pictures do I need on my
-                        website/app? Logo design? What software platform do I need? What information is required
-                        beforehand? Who will use the website/app? I will intervene as soon as a considerable amount of
-                        work has been done and you have answered many of these questions. From this point on I will
-                        introduce paid content. The paid content is very reasonable to accommodate you, the startup,
-                        individual or small to medium business. In doing so I anticipate that you as my new client will
-                        stay with me for the rest of the journey. As you grow, so will I grow with you. I believe that
-                        if we must succeed, we must do so together. We must not leave anyone behind. As our societies
-                        grow so must everyone else. By focusing on you, startups, individuals and small to medium
-                        businesses, we will have a greater impact on society and the world at large.
-                    </p>
-                </section>
+          
         </main>
         <footer>
             <h3>McLloyd Mobile Applications &copy; 2022 - McLloyd Pise</h3>
@@ -74,6 +88,28 @@
             </div>
         </footer>
     </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
 </body>
 
 </html>
