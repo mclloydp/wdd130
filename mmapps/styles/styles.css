@@ -101,100 +101,9 @@ nav a:hover {
 
 }
 
-.rivers-grid {
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-    grid-gap: 20px;
-}
-
-#sec1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin-top: 50px;
-}
-
-#title1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    text-align: center;
-    z-index: 1;
-    margin-top: 100px;
-    color: black;
-}
-
-#para1 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: 50px;
-}
-
-#para2 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-#sec2 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    z-index: -1;
-}
-
-#title2 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    text-align: center;
-    z-index: 1;
-    margin-top: 50px;
-}
-
-#sec3 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    z-index: -1;
-}
-
-#title3 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    text-align: center;
-    z-index: 1;
-    margin-top: 50px;
-}
-
-#para3 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-.card-img, .mountains {
-    width: 100%;
-}
-
-.rivers-card {
-    grid-column: 2/4;
-    grid-row: 2/3;
-}
-
-.camping-card {
-    grid-column: 5/7;
-    grid-row: 2/3;
-}
-
-.rapids-card {
-    grid-column: 8/10;
-    grid-row: 2/3;
-} 
-
 #background {
     grid-column: 1/11;
     grid-row: 4/9;
-}
-
-.mountains { 
-    width: 100%;
-    grid-column: 2/7;
-    grid-row: 5/8;
-    box-shadow: 5px 5px 10px #6f7364;
 }
 
 
@@ -241,140 +150,82 @@ h4 {
 h2 {
     margin: 0;
 }
-
-.book, .join{
-    background-color:#CEB490;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
+          
+/* Style the Image Used to Trigger the Modal */
+#myImg {
     border-radius: 5px;
-}
-
-.book:hover, .join:hover {
-    background-color:#CEB490;
-    color: black;
-} 
-
-.rivers-card, .camping-card, .rapids-card{
-    margin: 200px 0;
-}
-
-.card-img {
-    border: 10px #9EB2D5 ;
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;
-}
-
-.card-img:hover {
-    opacity: .6;
-    transform: scale(1.1);
-}
-
-main section img {
-    box-sizing: border-box;
-}
-
-.msg {
-    background-color:#9EB2D5;
-    line-height: 1.5em;
-    padding: 35px;
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px #6f7364;
-
-}
-.msg h2 {
-    color: black;
-}
-
-.msg p {
-    color: black;
-   font-size:.8em ; 
-   padding-bottom: 15px;
-}
-
-form {
-    /* Center the form on the page */
-    margin: 0 auto;
-    width: 400px;
-    /* Form outline */
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
+    cursor: pointer;
+    transition: 0.3s;
   }
   
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+  #myImg:hover {opacity: 0.7;}
   
-  form li + li {
-    margin-top: 1em;
-  }
-  
-  label {
-    /* Uniform size & alignment */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-  
-  input,
-  textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, textareas have a monospace font */
-    font: 1em sans-serif;
-  
-    /* Uniform text field size */
-    width: 300px;
-    box-sizing: border-box;
-  
-    /* Match form field borders */
-    border: 1px solid #999;
-  }
-  
-  input:focus,
-  textarea:focus {
-    /* Additional highlight for focused elements */
-    border-color: #000;
-  }
-  
-  textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-  
-    /* Provide space to type some text */
-    height: 5em;
-  }
-  
-  .button {
-    /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
-  }
-  
-  button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: .5em;
-  }
-  
-  #feedback {
-    background-color: antiquewhite;
-    position: absolute;
-    top: 0;
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: +1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
     left: 0;
-    right: 0;
-    padding: .5em;
-    /* make this element invisible until we are ready for it */
-    display: none;       
-}
-.moveDown {
-    margin-top: 3em;
-}
-                    
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+    
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
 
 footer {
     background-color:#9EB2D5;
@@ -428,20 +279,16 @@ footer .social img {
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
+   
     #background {
         display: none;
     }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
+  
     footer {
         margin-top: 25px;
     }
+    .modal-content {
+        width: 100%;
+      }
 
 }
